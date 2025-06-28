@@ -1,11 +1,13 @@
-/* Base Styling */
+/* ========================
+   GLOBAL STYLES
+======================== */
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to top right, #fceabb, #f8b500);
     font-family: 'Comic Sans MS', cursive;
     overflow-x: hidden;
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .container {
@@ -42,7 +44,9 @@ body {
     background-color: #e91e63;
   }
   
-  /* Balloons */
+  /* ========================
+     BALLOONS
+  ======================== */
   .balloons {
     position: absolute;
     top: 0;
@@ -50,6 +54,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
+    pointer-events: none;
   }
   
   .balloon {
@@ -62,21 +67,23 @@ body {
     animation: float 6s infinite ease-in;
   }
   
-  .red { background: red; left: 20%; animation-delay: 0s; }
-  .blue { background: blue; left: 40%; animation-delay: 2s; }
+  .red    { background: red;    left: 20%; animation-delay: 0s; }
+  .blue   { background: blue;   left: 40%; animation-delay: 2s; }
   .yellow { background: yellow; left: 60%; animation-delay: 4s; }
-  .green { background: green; left: 80%; animation-delay: 1s; }
+  .green  { background: green;  left: 80%; animation-delay: 1s; }
   
   @keyframes float {
-    0% { transform: translateY(0); }
+    0%   { transform: translateY(0); }
     100% { transform: translateY(-120vh); }
   }
   
-  /* Gallery Section */
+  /* ========================
+     GALLERY SECTION
+  ======================== */
   .gallery {
-    text-align: center;
     background: #fff0f5;
-    padding: 60px 20px;
+    padding: 40px 20px;
+    text-align: center;
     position: relative;
     z-index: 1;
   }
@@ -87,23 +94,21 @@ body {
     margin-bottom: 30px;
   }
   
-  /* 2-column grid rows */
   .photo-row {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
   
   .photo {
-    flex: 0 0 45%;
-    max-width: 50px; /* Shrinks the image width */
-    max-height: 80px; /* Prevents tall photos from taking over */
+    width: 300px;
+    height: 200px;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .photo img {
@@ -118,11 +123,13 @@ body {
     transform: scale(1.05);
   }
   
+  /* ========================
+     RESPONSIVE
+  ======================== */
   @media (max-width: 768px) {
     .photo {
-      flex: 0 0 90%;
-      max-width: 90%;
-      height: 300px;
+      width: 90%;
+      height: 200px;
     }
   }
   
