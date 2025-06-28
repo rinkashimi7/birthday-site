@@ -84,7 +84,8 @@ body {
   .photo-grid img:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }  
+  }
+  
   
   .red { background: red; left: 20%; animation-delay: 0s; }
   .blue { background: blue; left: 40%; animation-delay: 2s; }

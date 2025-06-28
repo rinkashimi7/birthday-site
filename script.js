@@ -14,6 +14,9 @@ type();
 
 // Play music
 function playMusic() {
-  const audio = document.getElementById("birthdayAudio");
-  audio.play();
-}
+    const audio = document.getElementById("birthdayAudio");
+    audio.play().catch(() => {
+      console.log("Autoplay failed, user must interact.");
+    });
+  }
+  
