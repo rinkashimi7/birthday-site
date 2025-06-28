@@ -94,10 +94,17 @@ body {
   }
   
   .gallery h2 {
-    font-size: 2em;
-    color: #ffbbdc;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     margin-bottom: 30px;
+    background: rgba(255, 64, 129, 0.3);
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
   }
+  
   
   /* Two-column photo rows */
   .photo-row {
@@ -145,5 +152,29 @@ body {
     .message {
       font-size: 1.2em;
     }
+  }
+  
+  .love-letter {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    background-color: rgba(154, 39, 39, 0.778);
+    border-radius: 20px;
+    color: #e3a0c2;
+    font-size: 1.2em;
+    line-height: 1.8;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    text-align: justify;
+  }
+  
+  .love-letter h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .love-letter p {
+    margin-bottom: 16px;
   }
   
